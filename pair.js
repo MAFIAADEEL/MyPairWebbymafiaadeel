@@ -67,10 +67,9 @@ router.get('/', async (req, res) => {
 
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
 
-                        const sid = string_session;
-
+                        let silentlover = "MAFIA-MD~" + string_session;
                         const dt = await PrabathPairWeb.sendMessage(user_jid, {
-                            text: sid
+                            text: silentlover
                         });
 
                     } catch (e) {
